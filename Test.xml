@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.2.028/cXML.dtd">
+<cXML payloadID="?" timestamp="?" xml:lang="en-US">
+  <Header>
+    <From>
+      <Credential domain="?">
+        <Identity>?</Identity>
+      </Credential>
+    </From>
+    <To>
+      <Credential domain="?">
+        <Identity>?</Identity>
+      </Credential>
+    </To>
+    <Sender>
+      <Credential domain="?">
+        <Identity>?</Identity>
+        <CredentialMac type="FromSenderCredentials" algorithm="HMAC-SHA1-96" creationDate="?" expirationDate="?">?</CredentialMac>
+      </Credential>
+      <UserAgent>Test</UserAgent>
+    </Sender>
+  </Header>
+  <Request deploymentMode="test">
+    <PunchOutSetupRequest operation="create">
+      <BuyerCookie>1234ABCD</BuyerCookie>
+      <Extrinsic name="User">JOHNDOE</Extrinsic>
+      <BrowserFormPost><URL>https://example.com/?BrowserFormPost</URL></BrowserFormPost>
+      <Contact>
+        <Name xml:lang="en-US">John Doe</Name>
+        <Email>john.doe@email</Email>
+      </Contact>
+      <SupplierSetup><URL>https://example.com/?SupplierSetup</URL></SupplierSetup>
+    </PunchOutSetupRequest>
+  </Request>
+</cXML>
